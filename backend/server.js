@@ -54,6 +54,9 @@ app.use(cors(
     // origin: ["http://localhost:3000/"]
     // // making the url Array since we may deploy our frontend to any other platform eg. heroku 
     // // for using backend from any place on internet don't add origin just do -> app.use(cors())} 
+    { 
+        origin: ["http://localhost:4000/", "https://mern-task-app.onrender.com"]
+    }
     ))
 
 

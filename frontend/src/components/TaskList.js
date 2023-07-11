@@ -87,6 +87,7 @@ const TaskList = () => {
           await axios.post(`${URL}/api/v1/tasks`, formData)
           toast.success("Task added successfully")
           setFormData({...formData, name:""})
+          getTasks()
        }
        catch(err){
           toast.error(err.message);
